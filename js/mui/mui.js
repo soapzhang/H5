@@ -3167,8 +3167,8 @@ Function.prototype.bind = Function.prototype.bind || function(to) {
 		var xhr = settings.xhr(settings);
 		var nativeSetHeader = xhr.setRequestHeader;
 		var abortTimeout;
-
-		setHeader('X-Requested-With', 'XMLHttpRequest');
+// 
+// 		setHeader('X-Requested-With', 'XMLHttpRequest');
 		setHeader('Accept', mime || '*/*');
 		if(!!(mime = settings.mimeType || mime)) {
 			if(mime.indexOf(',') > -1) {
